@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
-import '../../../homepage/controllers/home_controller.dart';
+import '../../controllers/homecontroller.dart';
 
 class BottomNavBar extends StatelessWidget {
   final HomeController controller = Get.find();
