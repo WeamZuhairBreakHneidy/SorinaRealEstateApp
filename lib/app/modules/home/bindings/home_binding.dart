@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:my_house_app/app/modules/property/controllers/propertycontroller.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -8,5 +9,7 @@ class HomeBinding extends Bindings {
     Get.lazyPut<HomeController>(
       () => HomeController(),
     );
+        Get.lazyPut<PropertyController>(() => PropertyController()); // ✅ This was the key fix
+
   }
 }
