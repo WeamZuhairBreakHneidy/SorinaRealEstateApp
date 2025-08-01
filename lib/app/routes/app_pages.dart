@@ -1,17 +1,18 @@
 import 'package:get/get.dart';
-import 'package:my_house_app/app/modules/home/views/home_view.dart';
 import 'package:my_house_app/app/modules/homemanagement/bindings/home_manager.dart';
 import 'package:my_house_app/app/modules/homemanagement/view/home_manager.dart';
-import 'package:my_house_app/app/modules/property/bindings/property_bindings.dart';
-import 'package:my_house_app/app/modules/property/view/property.dart';
+
 import 'package:my_house_app/app/modules/propertydetails/bindings/property_binding.dart';
 import 'package:my_house_app/app/modules/propertydetails/views/property_view.dart';
 
+import '../modules/architects/bindings/architects_binding.dart';
+import '../modules/architects/views/architects_view.dart';
 import '../modules/auth/bindings/auth_binding.dart';
 import '../modules/auth/bindings/register_binding.dart';
 import '../modules/auth/views/auth_view.dart';
 import '../modules/auth/views/register_view.dart';
-import '../modules/mainbar/bindings/mainbar_binding.dart';
+import '../modules/home/bindings/home_binding.dart';
+
 import '../modules/mainbar/views/Mainbar_view.dart';
 import '../modules/splash/bindings/splash_binding.dart';
 import '../modules/splash/views/splash_view.dart';
@@ -31,12 +32,12 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.PROPERTYDETAILS,
-      page: () =>  PropertyDetails(),
+      page: () => PropertyDetails(),
       binding: PropertyDetailsBinding(),
     ),
-     GetPage(
+    GetPage(
       name: _Paths.PROPERTYMANAGER,
-      page: () =>  PropertyManager(),
+      page: () => PropertyManager(),
       binding: PropertyManagerBinding(),
     ),
          
@@ -53,6 +54,11 @@ class AppPages {
       name: Routes.REGISTER,
       page: () => RegisterView(),
       binding: RegisterBinding(),
+    ),
+    GetPage(
+      name: _Paths.ARCHITECTS,
+      page: () =>  ArchitectsView(),
+      binding: ArchitectsBinding(),
     ),
   ];
 }

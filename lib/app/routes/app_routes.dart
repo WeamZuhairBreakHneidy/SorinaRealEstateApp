@@ -9,9 +9,7 @@ abstract class Routes {
   static const HOME = _Paths.HOME;
   static const PROPERTYDETAILS = _Paths.PROPERTYDETAILS;
   static const PROPERTYMANAGER = _Paths.PROPERTYMANAGER;
-
-
-
+  static const ARCHITECTS = _Paths.ARCHITECTS;
 }
 
 abstract class _Paths {
@@ -20,8 +18,8 @@ abstract class _Paths {
   static const PROPERTYDETAILS = '/propertydetails';
   static const PROPERTYMANAGER = '/propertymanager';
 
-
   static const AUTH = '/auth';
   static const REGISTER = '/register';
   static const SPLASH = '/splash';
+  static const ARCHITECTS = '/architects';
 }

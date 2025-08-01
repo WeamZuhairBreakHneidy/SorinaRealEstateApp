@@ -1,6 +1,6 @@
 
 class ApiEndpoints {
-  static const String baseUrl = 'http://10.0.2.2:8000]';
+  static const String baseUrl = 'http://192.168.1.5:8000';
 
   //Auth
   static const String login = '/api/login';
@@ -8,6 +8,9 @@ class ApiEndpoints {
   // Houses
    static const String houses = '/api/houses';
   static const String featuredHouses = '/api/featured-houses';
+
+
+  static const String architects = '/api/architects';
 
 
 
