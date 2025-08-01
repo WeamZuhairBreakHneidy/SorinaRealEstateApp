@@ -85,60 +85,57 @@ Widget build(BuildContext context) {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // 📍 Location + Price Row
+              //  Location + Price Row
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-
+                  Row(
                     children: [
-                      Row(
-                        children: [
-                          Icon(Icons.location_on_outlined, size: 25.sp, color: AppColors.black,),
-                           SizedBox(width: 4.w),
-                          Text(
-                            location,
-                           style: Theme.of(context).textTheme.labelMedium
-                          ),
-                        ],
-                      ),
-                      SizedBox(height: 5.h,),
-                     Row(
-                        children: [
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                address,
-                                style: Theme.of(context).textTheme.labelSmall
-                              
-                              ),
-                              SizedBox(height: 3.h,),
-                               Text(
-                              '$roomsNumber ${LocaleKeys.rooms.tr}, $groundDistance ${LocaleKeys.area.tr}, $floorsNumber ${LocaleKeys.floors.tr}',
-                                style: Theme.of(context).textTheme.labelSmall
-                              
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                       SizedBox(height: 5.h),
+                      Icon(Icons.location_on_outlined, size: 25.sp, color: AppColors.black),
+                      SizedBox(width: 4.w),
                       Text(
-                        price,
-                        style: Theme.of(context).textTheme.labelLarge,
+                        location,
+                        style: Theme.of(context).textTheme.titleMedium,
                       ),
-                      /*Text(
-                        '/Paid in Usd',
-                        style: TextStyle(fontSize: 14, color: Colors.grey[600]),
-                      ),*/
                     ],
                   ),
+                  Text(
+                    price,
+                    style: Theme.of(context).textTheme.labelLarge,
+                  ),
+                ],
+              ),
+                            
+                            
+                SizedBox(height: 5.h,),
+               Row(
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          address,
+                          style: Theme.of(context).textTheme.labelSmall
+                        
+                        ),
+                        SizedBox(height: 3.h,),
+                         Text(
+                        '$roomsNumber ${LocaleKeys.rooms.tr}, $groundDistance ${LocaleKeys.area.tr}, $floorsNumber ${LocaleKeys.floors.tr}',
+                          style: Theme.of(context).textTheme.labelSmall
+                        
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              Column(
+                children: [
+                   SizedBox(height: 5.h),
+                 
+                  /*Text(
+                    '/Paid in Usd',
+                    style: TextStyle(fontSize: 14, color: Colors.grey[600]),
+                  ),*/
                 ],
               ),
               SizedBox(height: 6.h,),
@@ -148,12 +145,12 @@ Widget build(BuildContext context) {
                   Text(
                     name,
                
-                    style: Theme.of(context).textTheme.titleMedium,
+                    style: Theme.of(context).textTheme.titleSmall,
                     
                   ),
 
                    ResponsiveButton(
-                    buttonHeight: 50.h,
+                    buttonHeight: 40.h,
                     onPressed: () {
                     Get.toNamed(
                       Routes.PROPERTYDETAILS,
@@ -178,8 +175,8 @@ Widget build(BuildContext context) {
                     );
                   },
                     clickable: true,
-                    buttonWidth: 150.w,
-                    child: Text( 'contact_seller_button'.tr, style: Theme.of(context).textTheme.titleSmall,),
+                    buttonWidth: 120.w,
+                    child: Text( 'contact_seller_button'.tr, style: Theme.of(context).textTheme.labelSmall,),
                   ),
 
                 ],

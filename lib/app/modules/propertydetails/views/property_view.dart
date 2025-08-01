@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:my_house_app/app/core/theme/colors.dart';
 import 'package:my_house_app/app/modules/propertydetails/controllers/property_controller.dart';
 import 'package:my_house_app/app/modules/propertydetails/views/widgets/Appbar.dart';
 import 'package:my_house_app/app/modules/propertydetails/views/widgets/Location_Address_widget.dart';
@@ -68,7 +69,7 @@ class PropertyDetails extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding:  EdgeInsets.symmetric(vertical: 6.h , horizontal: 40.w),
         child: ResponsiveButton(
           onPressed: () {},
           clickable: true,
@@ -80,7 +81,14 @@ class PropertyDetails extends StatelessWidget {
             ),
           ),
           buttonWidth: Get.width / 2,
-          child: Text('buttons_chat_on_whatsapp'.tr),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('buttons_chat_on_whatsapp'.tr),
+              SizedBox(width:30.w),
+              Icon(Icons.person ,color: AppColors.fontcolor,size: 30.sp,)
+            ],
+          ),
         ),
       ),
     );

@@ -125,7 +125,7 @@ class PropertyManagerController extends GetxController {
 
   @override
   void onClose() {
-    clearFields();
+    //clearFields();
     super.onClose();
   }
 }

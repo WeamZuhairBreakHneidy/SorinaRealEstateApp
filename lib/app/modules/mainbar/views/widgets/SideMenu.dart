@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:my_house_app/app/data/services/locale_service.dart';
+import 'package:my_house_app/app/routes/app_pages.dart';
 
 class SideMenu extends StatelessWidget {
   final VoidCallback onToggleLanguage;
@@ -20,6 +21,10 @@ class SideMenu extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             DrawerItem(title: 'home'.tr, icon: Icons.home, onTap: () {}),
+            SizedBox(height: 16.sp),
+            DrawerItem(title: 'Dashboard'.tr, icon: Icons.dashboard, onTap: () {
+              Get.toNamed(Routes.PROPERTYMANAGER);
+            }),
             SizedBox(height: 16.sp),
             DrawerItem(title: 'properties_sale'.tr, icon: Icons.sell, onTap: () {}),
             SizedBox(height: 16.sp),

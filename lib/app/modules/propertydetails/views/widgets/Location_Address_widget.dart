@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:my_house_app/app/core/theme/colors.dart';
 
 class LocationAddressWidget extends StatelessWidget {
@@ -12,13 +13,13 @@ class LocationAddressWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Icon(Icons.location_on_outlined, size:30, color: AppColors.red,),
+        Icon(Icons.location_on_outlined, size:26.sp, color: AppColors.red,),
         Text(location,
-             style: Theme.of(context).textTheme.titleLarge,
+             style: Theme.of(context).textTheme.titleSmall!.copyWith(color:AppColors.fontcolor),
             ),
-        Text(' - ',style: Theme.of(context).textTheme.titleLarge),
+        SizedBox(width:10.w),
         Text(address,
-             style: Theme.of(context).textTheme.labelMedium,),
+             style: Theme.of(context).textTheme.titleSmall,),
       ],
     );
   }

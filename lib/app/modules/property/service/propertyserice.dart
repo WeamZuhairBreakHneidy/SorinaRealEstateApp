@@ -18,14 +18,14 @@ static Future<List<HomeModel>> fetchHouses({String? location, String? query}) as
 
   // Decide endpoint based on whether search query is provided
   final uri = Uri.parse(query != null && query.isNotEmpty
-      ? '$baseUrl/houses/search'
-      : '$baseUrl/houses');
+      ? '$baseUrl/api/houses/search'
+      : '$baseUrl/api/houses');
 
   // Build query parameters
   final queryParameters = <String, String>{
     'per_page': '10',
     if (query != null && query.isNotEmpty) 'q': query,
-    if (location != null && location.toLowerCase() != 'all') 'location': location,
+    if (location != null && location.toLowerCase() != 'all' && location.toLowerCase() != 'الكل' ) 'location': location,
   };
 
   final finalUri = uri.replace(queryParameters: queryParameters);

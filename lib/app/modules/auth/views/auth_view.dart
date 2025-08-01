@@ -54,13 +54,13 @@ class AuthView extends GetView<AuthController> {
                       ? 'assets/images/authphoto.jpg'
                       : 'assets/backgrounds/tablet_background.jpeg',
                 ),
-                fit: BoxFit.fitHeight,
+                fit: BoxFit.fill,
               ),
             ),
           ),
           // Opacity Layer
           Container(
-            color: AppColors.grey.withOpacity(0.45),
+            color: AppColors.grey.withOpacity(0.3),
           ),
 
           Form(
@@ -91,6 +91,7 @@ class AuthView extends GetView<AuthController> {
 
                   margin:   EdgeInsets.only(top:70.h,left: 48.w,right: 48.w),
                   child: InputTextFormField(
+                      height: 80.h,
 
 
                     textEditingController: controller.emailController,
@@ -113,6 +114,7 @@ class AuthView extends GetView<AuthController> {
                   margin:   EdgeInsets.only(top:10.h,left: 48.w,right: 48.w),
                   child: Obx(
                     () => InputTextFormField(
+                      height: 60.h,
 
                       textEditingController: controller.passwordController,
                       errorStyle: const TextStyle(height: -1, color: Colors.transparent),
@@ -146,19 +148,7 @@ class AuthView extends GetView<AuthController> {
                       Flexible(flex: 1,child: RememberMeCheckbox(isChecked: controller.rememberMe)),
 
 
-                      // Forgot Password Button
-                      Flexible(
-                        flex: 1,
-                        child: TextButton(
-                          onPressed: () {
-                            // Forgot Password logic
-                          },
-                          child: Text(
-                            'labels_forgot'.tr,
-                            style: Theme.of(context).textTheme.bodySmall,
-                          ),
-                        ),
-                      ),
+                      
                     ],
                   ),
                 ),
@@ -187,7 +177,7 @@ class AuthView extends GetView<AuthController> {
                       ),
                     ),
                     buttonWidth: Get.width,
-                    child: Text('buttons_login'.tr, style: Theme.of(context).textTheme.labelSmall!.copyWith(color: AppColors.fontcolor)),
+                    child: Text('buttons_login'.tr, style: Theme.of(context).textTheme.titleMedium!.copyWith(color: AppColors.fontcolor)),
                   ),
                 )),
                        Container(
@@ -208,23 +198,26 @@ class AuthView extends GetView<AuthController> {
                       ),
                     ),
                     buttonWidth: Get.width,
-                    child: Text('guest_button'.tr, style: Theme.of(context).textTheme.labelSmall!.copyWith(color: AppColors.fontcolor)),
+                    child: Text('guest_button'.tr, style: Theme.of(context).textTheme.titleMedium!.copyWith(color: AppColors.fontcolor)),
                   ),
                 ),
 
 
 
-                Container(
-                  margin:   EdgeInsets.only(top:25.h,),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        "labels_dont_have_an_account".tr,
-                        style: Theme.of(context).textTheme.bodySmall,
-                      ),
-
-                    ],
+                GestureDetector(
+                  onTap: () => Get.toNamed(Routes.REGISTER),
+                  child: Container(
+                    margin:   EdgeInsets.only(top:25.h,),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "labels_dont_have_an_account".tr,
+                          style: Theme.of(context).textTheme.titleMedium!.copyWith(color:Colors.grey[400]),
+                        ),
+                  
+                      ],
+                    ),
                   ),
                 ),
 

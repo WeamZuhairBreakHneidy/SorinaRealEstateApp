@@ -17,7 +17,7 @@ class SearchBarWithButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 65.h,
+      height: 50.h,
       decoration: BoxDecoration(
         color: AppColors.lightGrey,
         borderRadius: BorderRadius.circular(16.r),
@@ -38,14 +38,14 @@ class SearchBarWithButton extends StatelessWidget {
                 fillColor: AppColors.lightGrey,
                 hintText: 'search_label_hint'.tr,
                 hintStyle: TextStyle(
-                fontSize: 17.sp, // Smaller font size
-                color:AppColors.fontcolor, // Custom hint color
+                fontSize: 14.sp, // Smaller font size
+                color:AppColors.grey, // Custom hint color
               ),
                 prefixIcon: const Icon(Icons.search),
                 border: InputBorder.none,
                 enabledBorder: InputBorder.none,
                 focusedBorder: InputBorder.none,
-                contentPadding: EdgeInsets.symmetric(vertical: 6.h),
+                contentPadding: EdgeInsets.symmetric(vertical: 10.h),
               ),
             ),
           ),
@@ -53,18 +53,22 @@ class SearchBarWithButton extends StatelessWidget {
           SizedBox(width: 8.w),
 
           // Button on the right
-          ResponsiveButton(
-            onPressed: onSearch,
-            clickable: true,
-            buttonStyle: ButtonStyle(
-              shape: WidgetStatePropertyAll(
-                RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(10.r)),
+          Padding(
+            padding:  EdgeInsets.all(4.h),
+            child: ResponsiveButton(
+              //buttonHeight: 40.h,
+              onPressed: onSearch,
+              clickable: true,
+              buttonStyle: ButtonStyle(
+                shape: WidgetStatePropertyAll(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10.r)),
+                  ),
                 ),
               ),
+              buttonWidth: 80.w,
+              child: Text('button_search'.tr, style: Theme.of(context).textTheme.labelSmall,),
             ),
-            buttonWidth: Get.width / 4,
-            child: Text('button_search'.tr),
           ),
         ],
       ),

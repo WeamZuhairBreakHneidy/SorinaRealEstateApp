@@ -27,7 +27,7 @@ class PropertyFeatures extends StatelessWidget {
               children: [
                 Text(
                   feature,
-                  style: Theme.of(context).textTheme.labelMedium,
+                  style: Theme.of(context).textTheme.bodyMedium,
                 ),
                 const SizedBox(width: 8),
                 const Icon(

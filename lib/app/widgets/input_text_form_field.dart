@@ -52,7 +52,7 @@ class InputTextFormField extends StatelessWidget {
       width: width, // Responsive width
       height: height, // Responsive height
       margin: margin , // Responsive margin
-      padding: padding,  // Responsive padding
+      //padding: padding,  // Responsive padding
       child: TextFormField(
         
         
@@ -97,15 +97,20 @@ class InputTextFormField extends StatelessWidget {
     color: Theme.of(context).colorScheme.primary,
     fontSize: 14.r,
   ),
-  hintText: hintText,
+   hintText: hintText,
   hintStyle: TextStyle(
-    color: AppColors.fontcolor,
+    color: Colors.grey[50],
     fontSize: 14.r,
   ),
-  contentPadding: EdgeInsets.symmetric(vertical: 12.h, horizontal: 16.w),
+  contentPadding: EdgeInsets.only(right: 10.w), // remove default padding so hint is exactly centered
+  
+  // Align hint and input text to center
+  alignLabelWithHint: true,
   prefixIcon: prefixIcon,
   suffixIcon: suffixIcon,
 ),
+textAlign: TextAlign.start,            // center the text and the hint text horizontally
+textAlignVertical: TextAlignVertical.top,
 
 
         validator: validator??(value) {

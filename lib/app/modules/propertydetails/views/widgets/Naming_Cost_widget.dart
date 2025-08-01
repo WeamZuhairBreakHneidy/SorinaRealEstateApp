@@ -13,7 +13,7 @@ class TitlePriceRow extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(title,
-             style: Theme.of(context).textTheme.titleLarge,
+             style: Theme.of(context).textTheme.titleMedium,
             ),
         Text(price,
              style: Theme.of(context).textTheme.labelLarge,),

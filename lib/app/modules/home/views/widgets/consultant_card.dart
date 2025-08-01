@@ -38,7 +38,16 @@ class ConsultantCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'You',
+                  'image_label1'.tr,
+                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                        color: Colors.white,
+                        fontSize: 30.sp,
+                        fontWeight: FontWeight.bold,
+                        //fontFamily: arabicFont,
+                      ),
+                ),
+                Text(
+                  'image_label2'.tr,
                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
                         color: Colors.white,
                         fontSize: 30.sp,
@@ -46,7 +55,7 @@ class ConsultantCard extends StatelessWidget {
                       ),
                 ),
                 Text(
-                  'need',
+                   'image_label3'.tr,
                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
                         color: Colors.white,
                         fontSize: 30.sp,
@@ -54,21 +63,13 @@ class ConsultantCard extends StatelessWidget {
                       ),
                 ),
                 Text(
-                  'an',
-                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                   'image_label4'.tr,
+                  style: Theme.of(context).textTheme.labelLarge?.copyWith(
                         color: Colors.white,
-                        fontSize: 30.sp,
                         fontWeight: FontWeight.bold,
                       ),
                 ),
-                Text(
-                  'advice',
-                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                        color: Colors.white,
-                        fontSize: 30.sp,
-                        fontWeight: FontWeight.bold,
-                      ),
-                ),
+              
               ],
             ),
           ),

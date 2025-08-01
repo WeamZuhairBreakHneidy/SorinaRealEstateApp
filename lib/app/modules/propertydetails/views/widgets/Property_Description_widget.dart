@@ -10,7 +10,7 @@ class DescriptionRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       description,
-        style: Theme.of(context).textTheme.labelMedium,
+        style: Theme.of(context).textTheme.bodyMedium,
     );
   }
 }

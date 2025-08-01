@@ -114,6 +114,11 @@ flutter:
         - asset: assets\fonts\PlayfairDisplay-BoldItalic.ttf
         
           weight: 600
+     - family: Cairo
+       fonts:
+        - asset: assets\fonts\Cairo-Bold.ttf
+        
+          weight: 600
      
   #
   # For details regarding fonts from package dependencies,

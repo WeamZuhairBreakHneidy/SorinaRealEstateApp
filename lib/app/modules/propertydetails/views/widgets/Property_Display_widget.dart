@@ -47,7 +47,7 @@ class _PropertyGalleryState extends State<PropertyGallery> {
                 );
               }).toList(),
               options: CarouselOptions(
-                height: 450.h,
+                height: 400.h,
                 viewportFraction: 1.0,
                 enlargeCenterPage: false,
                 autoPlay: true,

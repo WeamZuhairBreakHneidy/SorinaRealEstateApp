@@ -28,9 +28,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       title: Center(
         child: Text(
           'Sorina',
-          style: Theme.of(context).textTheme.titleLarge?.copyWith(
-    fontFamily: AppTheme.thirdFont,  // reference correctly
-  ),
+          style: Theme.of(context).textTheme.titleLarge,
+          
         ),
       ),
       actions: [

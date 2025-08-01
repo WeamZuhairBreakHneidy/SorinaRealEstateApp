@@ -12,7 +12,7 @@ class BottomNavBar extends StatelessWidget {
     return Obx(() {
       return Container(
        
-        height: 60.h,
+        height: 65.h,
         // Reduced margin for wider bar
        margin: EdgeInsets.only(left: 24.w, right: 24.w, top: 8.h,bottom:16.h),
 
@@ -73,7 +73,8 @@ class BottomNavBar extends StatelessWidget {
                             .labelSmall
                             ?.copyWith(
                                 color: Colors.black,
-                                fontWeight: FontWeight.w500
+                                fontWeight: FontWeight.w500,
+                                fontSize: 12.sp,
                             ),
                         textAlign: TextAlign.center,
                       ),

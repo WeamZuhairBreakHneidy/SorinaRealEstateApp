@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:my_house_app/app/core/theme/colors.dart';
 
@@ -14,18 +15,17 @@ RememberMeCheckbox({super.key, required this.isChecked, this.activeColor});
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Checkbox(
-      
-            checkColor: Theme.of(context).primaryColor,
-            side: BorderSide(
-              color: activeColor ?? AppColors.fontcolor
+          SizedBox(width:15.w,
+            child: Checkbox(
+                  
+             
+              value: isChecked.value,
+              onChanged: (value) {
+                isChecked.value = value!;
+              },
             ),
-            value: isChecked.value,
-            onChanged: (value) {
-              isChecked.value = value!;
-            },
-            activeColor: activeColor ?? AppColors.numbersfontcolor,
           ),
+          SizedBox(width:5.w),
           Text('labels_remember_me'.tr,
               style: Theme.of(context).textTheme.bodySmall),
         ],

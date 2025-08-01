@@ -19,6 +19,7 @@ class LocaleKeys {
   static const bar_label_4 = 'bar_label_4';
   //sideMenu
   static const String home = 'home';
+  static const String Dashboard = 'Dashboard';
   static const String saleProperties = 'sale_properties';
   static const String rentProperties = 'rent_properties';
   static const String farmsSale = 'farms_sale';
@@ -32,6 +33,11 @@ class LocaleKeys {
   static const propertiesForSale = 'propertiesForSale';
   static const propertiesForRent = 'propertiesForRent';
   static const ask_button = 'ask_button';
+  static const image_label1 = 'image_label1';
+  static const image_label2 = 'image_label2';
+  static const image_label3 = 'image_label3';
+  static const image_label4 = 'image_label4';
+  
   static const latestAddedProperties = 'latestAddedProperties';
   static const noHousesFound = 'noHousesFound';
   //property
@@ -165,6 +171,7 @@ class Locales {
     //sideMenu
 
      'home': 'الرئيسية',
+     'Dashboard': 'لوحة التجكم',
     'properties_sale': 'عقارات للبيع',
     'properties_rent': 'عقارات للإيجار',
     'farms_sale': 'مزارع للبيع',
@@ -175,6 +182,10 @@ class Locales {
      'ad_label_ext' : 'كن مميزا',
      'ad_label_ext2' : 'مميز',
      'ask_button' : 'اسأل مستشاراً',
+      'image_label1': 'عم',
+      'image_label2': 'بتدور',
+      'image_label3': 'على',
+      'image_label4': 'نصيحة',
     'ourServices': 'خدماتنا',
     'propertiesForSale': 'عقارات للبيع',
     'propertiesForRent': 'عقارات للإيجار',
@@ -302,6 +313,7 @@ class Locales {
     'bar_label_4': 'Ask a Consultant',
     //sideMenu
     'home': 'Home',
+    'Dashboard': 'Dashboard',
     'properties_sale': 'Properties for Sale',
     'properties_rent': 'Properties for Rent',
     'farms_sale': 'Farms for Sale',
@@ -312,6 +324,11 @@ class Locales {
       'ad_label_ext' : 'Be Special',
       'ad_label_ext2' : 'Special',
       'ask_button': 'Ask a consultant',
+      'image_label1': 'You',
+      'image_label2': 'need',
+      'image_label3': 'an',
+      'image_label4': 'advice',
+      
      'ourServices': 'Our Services',
      'propertiesForSale': 'Properties for Sale',
      'propertiesForRent': 'Properties for Rent',
