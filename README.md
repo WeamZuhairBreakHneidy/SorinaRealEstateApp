@@ -8,4 +8,7 @@ Get-x Ecosystem
 
 Laravel Backend
 
-Sql Backend
+Sql
+
+[Uploading SorinaRealEstateApp.pdf…]()
+
