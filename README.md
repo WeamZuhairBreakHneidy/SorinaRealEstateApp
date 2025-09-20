@@ -1,16 +1,11 @@
-# my_house_app
+# Sorina Real estate app
+Sorina is an Android/IOS platform which provide a real estate store for +10 cities over Syria with full displaying for the property specifications using high quality images , videos.
 
-A new Flutter project.
+# App was built using:
+Flutter Widgets
 
-## Getting Started
+Get-x Ecosystem
 
-This project is a starting point for a Flutter application.
+Laravel Backend
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Sql Backend
