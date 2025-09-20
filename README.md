@@ -10,5 +10,6 @@ Laravel Backend
 
 Sql
 
-[Uploading SorinaRealEstateApp.pdf…]()
+
+
 
